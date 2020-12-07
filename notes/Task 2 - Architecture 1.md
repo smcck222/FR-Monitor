@@ -56,37 +56,6 @@ If not, an alert is sent to the dashboard (optionally along with a frame from th
 
 - Are there any additional system requirements that we would require because the model is distributed FR as compared to centralized (where the client is not doing much) and how much will this affect cost during scaling? 
 
-**ORGANIZATION FOR PPT: **
-
-- First slide - heading 
-
-- Intro (About the Localized FR architecture)
-
-- Centralized  VS Distributed FR App. 
-
-- Advantages 
-
-- Disadvantages 
-
-- Frameworks identified  (and what we will require from Futurenet) 
-
-  VMware Horizon 
-
-  Centralized deployed authentication server. 
-
-  Training DL Model (On Colab, GPU, TPU is there, I don't think we'll need more) 
-
-  FR App 
-
-  Dashboard - Rest API? 
-
-  Paper Evaluation App - Rest API? 
-
-  Authentication 
-
-- General problems wrt FR test cases, and disadvantages of using VMs in the first place. 
-
-
 
 
 
