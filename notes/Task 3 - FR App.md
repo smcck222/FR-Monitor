@@ -4,7 +4,7 @@
 
 2. [FR System Reference](https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/)
 
-3. [A Gentle Introduction to Deep Learning for Face Recognition (machinelearningmastery.com)](https://machinelearningmastery.com/introduction-to-deep-learning-for-face-recognition/))
+3. [A Gentle Introduction to Deep Learning for Face Recognition](https://machinelearningmastery.com/introduction-to-deep-learning-for-face-recognition/))
 
 4. Read about different FR products (Ari will share) and see what they do. Check out the issues with those because we want to build a mature product, which is robust.
 
@@ -17,7 +17,7 @@
    - Send label alone 
    - Send frame + label. How to send the frame, take care of it later. 
 
-**Points to Remember: ** 
+**Points to Remember:** 
 
 1. The paper viewing and eval is not part of our app. 
 2. User should not know that our app is running (no UI on user end). 
