@@ -23,5 +23,5 @@ Computer Vision : OpenCV, Deep Learning
 
 [Pyimagesearch](https://www.pyimagesearch.com/)
 
-[COmputer Vision Development: What you need](https://dzone.com/articles/8-steps-to-mastering-your-computer-vision-developm)
+[Computer Vision Development: What you need](https://dzone.com/articles/8-steps-to-mastering-your-computer-vision-developm)
 
