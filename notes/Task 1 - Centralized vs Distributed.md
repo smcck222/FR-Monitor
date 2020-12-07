@@ -8,7 +8,7 @@ Nvidia GeForce MX110, version : 451.67
 
 _The NVIDIA Driver is the software driver for **NVIDIA Graphics GPU** installed on the PC. It is a program used to communicate from the Windows PC OS to the device. This software is required in most cases for the hardware device to function properly._
 
-[What's the Difference Between a CPU vs a GPU? | NVIDIA Blog](https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/))
+[What's the Difference Between a CPU vs a GPU? | NVIDIA Blog](https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/)
 
 Key Questions : 
 
