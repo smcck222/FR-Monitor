@@ -2,26 +2,8 @@
 
 _**Futurenet Technologies**_
 
-My Device Specs: (System->About)
-
-Device name	LAPTOP-12EEKOFT
-Processor	Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz   1.80 GHz
-Installed RAM	8.00 GB
-Device ID	68F9D252-5DD5-4DCB-9397-4C785B61C4F0
-Product ID	00327-35830-87104-AAOEM
-System type	64-bit operating system, x64-based processor
-Pen and touch	No pen or touch input is available for this display
-
-Edition	Windows 10 Home Single Language
-Version	20H2
-Installed on	‎11-‎09-‎2020
-OS build	19042.630
-Experience	Windows Feature Experience Pack 120.2212.31.0
-
 GPU: (Device Manager->Display Adapters)
-
 Nvidia Driver Version: (Nvidia Control Panel->System Information->Details)  
-
 Nvidia GeForce MX110, version : 451.67 
 
 _The NVIDIA Driver is the software driver for **NVIDIA Graphics GPU** installed on the PC. It is a program used to communicate from the Windows PC OS to the device. This software is required in most cases for the hardware device to function properly._
