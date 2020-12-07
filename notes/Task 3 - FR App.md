@@ -17,5 +17,12 @@
    - Send label alone 
    - Send frame + label. How to send the frame, take care of it later. 
 
+**Points to Remember: ** 
+
+1. The paper viewing and eval is not part of our app. 
+2. User should not know that our app is running (no UI on user end). 
+3. Get admin access to computer to make sure user does not switch off. 
+4. Convert face data and label to json for transmission to dashboard. 
+5. Check if DB is required for JSON storage if many VMs are running. 
    
 
