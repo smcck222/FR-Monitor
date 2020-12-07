@@ -1,6 +1,6 @@
 <h4>Futurenet Technologies - FR Paper Monitoring Application</h4>
 
-**Decided Architecture Model: ** Running FR app in individual VMs. 
+**Decided Architecture Model:** Running FR app in individual VMs. 
 
 **Clarifications:** 
 
