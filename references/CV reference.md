@@ -21,8 +21,7 @@ Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow By [Aur√©lien G√
 
 Computer Vision : OpenCV, Deep Learning 
 
-https://www.pyimagesearch.com/ 
+[Pyimagesearch](https://www.pyimagesearch.com/)
 
-https://dzone.com/articles/8-steps-to-mastering-your-computer-vision-developm
+[COmputer Vision Development: What you need](https://dzone.com/articles/8-steps-to-mastering-your-computer-vision-developm)
 
-Computer Vision Development.
