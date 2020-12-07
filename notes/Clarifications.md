@@ -14,7 +14,7 @@
 
 3. FR model: 
 
-   If the VMs are deployed with the FR model inside them, every time we retrain the model as new faces are registered, we would have to re-bake new VM images with the new model, to replace the old VMs. A better solution is to keep the VMs as they are, with only the paper eval app, and instead download the FR model from the server on bootup of the VM. Once the model is downloaded, the FR app starts running in the background. 
+   If the VMs are deployed with the FR model inside them, every time we retrain the model as new faces are registered, we would have to re-bake new VM images with the new model, to replace the old VMs. A better solution is to keep the VMs as they are, with only the paper eval app, and instead set up an automatic download of the FR model from the server on bootup of the VM. Once the model is downloaded, the FR app starts running in the background. 
 
    
 
