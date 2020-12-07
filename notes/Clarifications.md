@@ -10,7 +10,7 @@
 
 2. Webcam access: 
 
-   Possible Requirement: FR application runs inside the VM, access to webcam will be taken care of by VMware Horizon (**Vmware Blast protocol or PCoIP to access local desktop’s camera and microphone from the VM.** Is there an equivalent in the architecture that is currently set up? 
+   Possible Requirement: FR application runs inside the VM, access to webcam will be taken care of by VMware Horizon (**Vmware Blast protocol or PCoIP to access local desktop’s camera and microphone from the VM.)** Is there an equivalent in the architecture that is currently set up? 
 
 3. FR model: 
 
