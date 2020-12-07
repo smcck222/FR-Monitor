@@ -12,10 +12,14 @@
 
 6. Madhav's Stuff: Liveness Detection + FR unknown face. 
 
-7. Figure out a way to send JSON output to dashboard. 
+
+Figure out a way to send JSON output to dashboard. 
 
    - Send label alone 
    - Send frame + label. How to send the frame, take care of it later. 
+
+Vichu  - Dashboard, react, node.js 
+Pranav - How to run FR app (python script) in BG (Windows) on bootup + make sure user doesn't shut it down. 
 
 **Points to Remember:** 
 
