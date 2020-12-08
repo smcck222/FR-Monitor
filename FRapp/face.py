@@ -1,22 +1,25 @@
 import face_recognition
 import cv2
 import numpy as np
+import os
 
 
 video_capture = cv2.VideoCapture(0)
 
-# Load a sample picture and learn how to recognize it.
-shreyas_image = face_recognition.load_image_file("shreyas2.JPG")
-shreyas_face_encoding = face_recognition.face_encodings(shreyas_image)[0]
+# List of known face encodings and their names. 
+known_face_encodings = []
+known_face_names = []
 
+# Load a folder of known pictures and learn how to recognize it. 
+def known_faces(folder_path):
+    
+    for filename in os.listdir(folder_path):
+        input_image = face_recognition.load_image_file(os.path.join(folder_path, filename))
+        face_encoding = face_recognition.face_encodings(input_image)[0]
+        known_face_encodings.append(face_encoding)
+        known_face_names.append(filename[:-4])
 
-# Create arrays of known face encodings and their 2ames
-known_face_encodings = [
-    shreyas_face_encoding
-]
-known_face_names = [
-    "Madhav"
-]
+known_faces("/home/server/Desktop/futurenetFR/known_faces")
 
 # Initialize some variables
 face_locations = []
