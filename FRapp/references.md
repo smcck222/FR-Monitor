@@ -9,6 +9,8 @@
     A CNN was trained to classify if an eye was open or close. LeNEt-5 was trained on _Closed Eyes in the Wild (CEW)_ dataset. 
     It is composed of around 4800 eye images in size 24x24. The model gave a 94% accuracy.
     So when an eye is detected, we predict its status using the model, and keep track of the history of its status. The pattern closed-open-closed (1-0-1) indicates a blink, which in turn indicates liveness.
+    
+  - [Blink detection](https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/)
 
 3. [Face Recognition](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
 
