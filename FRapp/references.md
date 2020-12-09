@@ -1,7 +1,7 @@
 **REFERENCES:** 
 
-1. [dlib installation Linux](https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/)
-   [dlib installation Windows](https://medium.com/analytics-vidhya/how-to-install-dlib-library-for-python-in-windows-10-57348ba1117f)
+1. - [dlib installation Linux](https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/)
+   - [dlib installation Windows](https://medium.com/analytics-vidhya/how-to-install-dlib-library-for-python-in-windows-10-57348ba1117f)
 2. Liveness Detection : 
 
   - [As a binary classification problem](https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/)
