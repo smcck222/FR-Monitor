@@ -85,9 +85,9 @@ while True:
     # Display the resulting image
     cv2.imshow('Video', frame)
     
-    if name == "unknown face": 
+    # if name == "unknown face": 
         # send alert, timestap, frame as JSON output to dashbaord. 
-        break
+        # break
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
