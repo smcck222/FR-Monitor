@@ -1,25 +1,28 @@
+import json
 import face_recognition
 import cv2
 import numpy as np
-import os
+from datetime import datetime
+import base64
+import PIL.Image as Image
 
-
+login="Madhav"
+i=1
+notperson="Unknown Face: Notify central"
 video_capture = cv2.VideoCapture(0)
 
-# List of known face encodings and their names. 
-known_face_encodings = []
-known_face_names = []
+# Load a sample picture and learn how to recognize it.
+shreyas_image = face_recognition.load_image_file("shreyas2.JPG")
+shreyas_face_encoding = face_recognition.face_encodings(shreyas_image)[0]
 
-# Load a folder of known pictures and learn how to recognize it. 
-def known_faces(folder_path):
-    
-    for filename in os.listdir(folder_path):
-        input_image = face_recognition.load_image_file(os.path.join(folder_path, filename))
-        face_encoding = face_recognition.face_encodings(input_image)[0]
-        known_face_encodings.append(face_encoding)
-        known_face_names.append(filename[:-5])
 
-known_faces("/home/server/Desktop/futurenetFR/known_faces")
+# Create arrays of known face encodings and their 2ames
+known_face_encodings = [
+    shreyas_face_encoding
+]
+known_face_names = [
+    "Madhav"
+]
 
 # Initialize some variables
 face_locations = []
@@ -47,7 +50,7 @@ while True:
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
-            name = "unknown face"
+            name = "Unknown Face: Notify central"
 
             # # If a match was found in known_face_encodings, just use the first one.
             # if True in matches:
@@ -62,21 +65,37 @@ while True:
 
             face_names.append(name)
 
-    process_this_frame = not process_this_frame
+    process_this_frame = not process_this_frame 
     
-    
-    # Action after FR = display/ send notification. 
-    
+    if name==notperson and i==1:
+        cv2.imwrite(filename='intruder_frame.jpg', img=frame)
+        i=2
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        
+            
+        
+        x = {
+              "Loginname": login,
+              "time": current_time,
+             
+              
+            }
+        y = json.dumps(x)
+        print(y)
+        
+ 
+    # Display the results
     for (top, right, bottom, left), name in zip(face_locations, face_names):
         # Scale back up face locations since the frame we detected in was scaled to 1/4 size
         top *= 4
         right *= 4
         bottom *= 4
         left *= 4
-
+      
         # Draw a box around the face
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
-
+        
         # Draw a label with a name below the face
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
@@ -84,10 +103,6 @@ while True:
 
     # Display the resulting image
     cv2.imshow('Video', frame)
-    
-    # if name == "unknown face": 
-        # send alert, timestap, frame as JSON output to dashbaord. 
-        # break
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
