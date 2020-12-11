@@ -18,6 +18,12 @@
 
 4. Making sure all dependencies are installed in the VM. 
 
-   - cmake 
+   - cmake (including change PATH env variable)
    - dlib 
+   - visual studio 2017 was installed 
+   - Need to find an alternative, install a source version of dlib wheel witout the cmake dependency? 
+   - Liveness detection will need tensorflow, keras, for the eye and blink detection parts. 
+   
+   
+   
    
