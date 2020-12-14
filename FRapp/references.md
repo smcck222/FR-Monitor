@@ -21,9 +21,9 @@
    - cmake (including change PATH env variable)
    - dlib 
    - visual studio 2017 was installed 
-   - Need to find an alternative, install a source version of dlib wheel witout the cmake dependency? 
+     -  Need to find an alternative, install a source version of dlib wheel witout the cmake dependency? 
    - Liveness detection will need tensorflow, keras, for the eye and blink detection parts. 
-   
-   
-   
+
+5. Fixes: 
+   [Webcam release error cv2](https://stackoverflow.com/questions/53888878/cv2-warn0-terminating-async-callback-when-attempting-to-take-a-picture)
    
