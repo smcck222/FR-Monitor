@@ -25,3 +25,6 @@ Computer Vision : OpenCV, Deep Learning
 
 [Computer Vision Development: What you need](https://dzone.com/articles/8-steps-to-mastering-your-computer-vision-developm)
 
+**DATA SCIENCE BOOKS:** 
+
+- https://github.com/chandanverma07/Ebooks
