@@ -27,3 +27,49 @@
 5. Fixes: 
    [Webcam release error cv2](https://stackoverflow.com/questions/53888878/cv2-warn0-terminating-async-callback-when-attempting-to-take-a-picture)
    
+6. Sending image across to server
+   - https://stackoverflow.com/questions/20001229/how-to-get-posted-json-in-flask
+   - https://stackoverflow.com/questions/8313374/convert-image-to-json
+   - https://stackoverflow.com/questions/19439961/python-requests-post-json-and-file-in-single-request
+  
+  ```
+   def alert_dashboard(frame, alert_type): 
+   # Sends alert if unknown to central dashboard.   
+    
+    cv2.imwrite(filename='intruder_frame.jpg', img=frame)  # Saves intruder frame to same folder.
+    
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    """
+    img = Image.fromarray(frame.astype("uint8"))
+    img = img.resize((128,128))
+    rawBytes = BytesIO()
+    img.save(rawBytes, "JPEG")
+    rawBytes.seek(0)
+    jstr = rawBytes.getvalue()
+    """
+    print("ALERT TO DASHBOARD" + alert_type + ":" + current_time + ":" + login)
+    
+    #y = json.dumps(jstr)
+    #print(y)   # Prints JSON output to console. 
+    
+    # TODO: Send JSON output to dashboard.  
+    
+    #r = requests.post('http://127.0.0.1:5000/dashboard', json = x ) 
+
+    #files = {'media': open('C:/Users/Server/Desktop/futurenetFR/intruder_frame.jpg', 'rb')}
+    #requests.post('http://127.0.0.1:5000/dashboard', json = x , files=files)
+     
+    url = 'http://127.0.0.1:5000/dashboard'
+    x = {
+        "login_name": login,
+        "time": current_time,  
+        "type": alert_type,
+        "image": "base64 img"
+    }
+
+    files = {'filedata': open("C:/Users/Server/Desktop/futurenetFR/intruder_frame.jpg", 'rb')}
+    r = requests.post(url, json = x)
+    print("[LOG]: Intruder detected -> Alert sent to dashboard")
+    ```
+
