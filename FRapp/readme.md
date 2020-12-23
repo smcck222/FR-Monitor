@@ -1,7 +1,13 @@
-**DESCRIPTION:** 
+**OBJECTIVE:** 
 
 App to check for unknown faces in the webcam frame in order to assist paper evalutaion monitoring. Alerts are sent to central React Dashboard running on a Spring server, with a MySQL database in the backend. 
 
+**DESCRIPTION:** 
+
+- _basic_fr_ : Basic FR monitoring, without liveness detection. 
+- _live_detection_ : Blink-based liveness detection added to FR. 
+- _known_face_ : Database of known registered faces. 
+- _flask_server.py_ : Flask server to recieve the alerts from the FR app. For testing purposes. 
 
 **REFERENCES:** 
 
