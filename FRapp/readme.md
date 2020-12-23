@@ -6,7 +6,9 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
 
 - _basic_fr_ : Basic FR monitoring, without liveness detection. 
 - _live_detection_ : Blink-based liveness detection added to FR. 
-- _known_face_ : Database of known registered faces. 
+- _known_faces_ : Database of known registered faces. 
+  Adding more registered faces: 
+  - Add 6 pictures of face, named appropriately i.e. newfacename1.jpg, newfacename2.jpg, etc. 
 - _flask_server.py_ : Flask server to recieve the alerts from the FR app. For testing purposes. 
 
 **REFERENCES:** 
