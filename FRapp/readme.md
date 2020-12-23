@@ -30,8 +30,10 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
    - https://stackoverflow.com/questions/20001229/how-to-get-posted-json-in-flask
    - https://stackoverflow.com/questions/8313374/convert-image-to-json
    - https://stackoverflow.com/questions/19439961/python-requests-post-json-and-file-in-single-request
-  
+
+```
   #ATTEMPT1
+```
 ```
    def alert_dashboard(frame, alert_type): 
    # Sends alert if unknown to central dashboard.   
@@ -59,7 +61,7 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
     print("[LOG]: Intruder detected -> Alert sent to dashboard")
  ```
     
-    #ATTEMPT2
+#ATTEMPT2
  ```
    def alert_dashboard(frame, alert_type): 
    # Sends alert if unknown to central dashboard.   
@@ -77,5 +79,9 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
 
    
    files = {'media': open('C:/Users/Server/Desktop/futurenetFR/intruder_frame.jpg', 'rb')}
+
    requests.post('http://127.0.0.1:5000/dashboard', json = x , files=files)
+   # requests.post('http://127.0.0.1:5000/dashboard', data = x , files=files)
+   
+   print("[LOG]: Intruder detected -> Alert sent to dashboard")
 ```
