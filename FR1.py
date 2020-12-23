@@ -6,6 +6,7 @@ import json
 from datetime import datetime
 import base64
 import PIL.Image as Image
+import requests
 
 video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 login = "sherin" 
@@ -53,21 +54,29 @@ def check_alert_dashboard(name, frame):
 # Sends alert if unknown to central dashboard.   
     global intruder
     if name==alert and intruder==0:
+        
         cv2.imwrite(filename='intruder_frame.jpg', img=frame)  # Saves intruder frame to same folder.
         intruder = 1
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
+        image = "base64 img"  # TODO: Figure out how to send this.
+        alert_type = "unknown face"
         
-        x = {
-              "login_name": login,
-              "time": current_time,  
-              # TODO: Figure out how to send picture in JSON object as well.
-            }
+        url = 'http://127.0.0.1:5000/dashboard'
+        x = {# JSON object. 
+            
+            "login_name": login,
+            "time": current_time,  
+            "type": alert_type,
+            "image": image
+        }
+
+        # Sending alert as JSON object to dashboard. 
+        r = requests.post(url, json = x)   
         
-        y = json.dumps(x)
+        #y = json.dumps(x)
         #print(y)   # Prints JSON output to console. 
         
-        # TODO: Send JSON output to dashboard.  
         print("[LOG]: Intruder detected -> Alert sent to dashboard")
         
 
