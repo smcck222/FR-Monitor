@@ -61,11 +61,12 @@ def check_alert_dashboard(name, frame):
         current_time = now.strftime("%H:%M:%S")
         image = "base64 img"  # TODO: Figure out how to send this.
         alert_type = "unknown face"
-        
+        user_id = login
         url = 'http://127.0.0.1:5000/dashboard'
         x = {# JSON object. 
             
             "login_name": login,
+            "user_id" : user_id,
             "time": current_time,  
             "type": alert_type,
             "image": image
