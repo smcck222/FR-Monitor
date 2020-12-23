@@ -57,10 +57,10 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
 
     r = requests.post('http://127.0.0.1:5000/dashboard', json = x ) 
     print("[LOG]: Intruder detected -> Alert sent to dashboard")
-    '''
+ ```
     
     #ATTEMPT2
-```
+ ```
    def alert_dashboard(frame, alert_type): 
    # Sends alert if unknown to central dashboard.   
    
