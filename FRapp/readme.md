@@ -40,9 +40,9 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
    - https://stackoverflow.com/questions/8313374/convert-image-to-json
    - https://stackoverflow.com/questions/19439961/python-requests-post-json-and-file-in-single-request
 
-```
-  #ATTEMPT1
-```
+
+#ATTEMPT1
+
 ```
    def alert_dashboard(frame, alert_type): 
    # Sends alert if unknown to central dashboard.   
