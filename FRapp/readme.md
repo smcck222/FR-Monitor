@@ -34,7 +34,7 @@ App to check for unknown faces in the webcam frame in order to assist paper eval
 
 1. [Webcam release error cv2](https://stackoverflow.com/questions/53888878/cv2-warn0-terminating-async-callback-when-attempting-to-take-a-picture)
    
-2. How to send images accross to the server and recieve them on the server side? 
+2. How to send images accross to the server and receive them on the server side? 
 
    - https://stackoverflow.com/questions/20001229/how-to-get-posted-json-in-flask
    - https://stackoverflow.com/questions/8313374/convert-image-to-json
