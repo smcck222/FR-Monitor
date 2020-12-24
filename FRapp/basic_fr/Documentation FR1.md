@@ -14,7 +14,13 @@ This application's user base is government medical colleges that require a monit
 
     _pip install opencv-python_
 
-  - face-recognition (cmake, dlib) 
+  - face-recognition (cmake, dlib)
+    
+    _pip install cmake_ 
+                        
+    _pip install dlib_  
+    
+    Use admin cmd only
 
   - requests 
 
