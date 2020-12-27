@@ -1,1 +1,20 @@
 
+FUTURENET TECHNOLOGIES (INDIA) PVT LIMITED
+Face Recognition Based Monitoring Application for Paper Evaluation
+
+Making the application a service/task for a single user:
+Overview:
+	The face recognition application as well as the liveness detection created is run in the background as an unclosable task every time the VM is booted. It is closed after the completion of paper evaluation.
+
+Requirements:
+---Windows 10 OS
+---Task scheduler in-built app
+---Face recognition python program along with its requirements (See futurenetFR/FRapp/basic_fr/Documentation FR1.md in github repo)
+---Liveness detection python program
+
+Working:
+---Create batch file by opening notepad and type the path where python.exe exists as well as the face recognition python.
+---Save the file as .bat
+---Open Task Scheduler app and click create new task
+---Enter required details and import the .bat file as an action done by task
+
