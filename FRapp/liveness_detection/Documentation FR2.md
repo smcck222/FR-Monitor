@@ -1,8 +1,8 @@
-##Description:
+## Description:
 
 The Liveness Detection Module is responsible for assuring live presence of the user and to prevent face spoofing related malpractices.
 
-##Requirements:
+## Requirements:
 
  Pillow(PIL)
  ---pip install pillow
