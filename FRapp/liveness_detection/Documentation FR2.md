@@ -1,36 +1,36 @@
-## Description:
+##Description:
 
 The Liveness Detection Module is responsible for assuring live presence of the user and to prevent face spoofing related malpractices.
 
-## Requirements:
+##Requirements:
 
- Pillow(PIL)
- ---pip install pillow
+ * Pillow(PIL)
+    ---pip install pillow
  
- OpenCV
+* OpenCV
  ---pip install opencv-python
  
- face_recognition
+ * face_recognition
  ---pip install face-recognition
  
- Numpy
+ * Numpy
  ---pip install numpy
  
- Tqdm
+ * Tqdm
  ---pip install tqdm
  
- imutils.video
+ * imutils.video
  ---pip install imutils
  
- Tensorflow
+* Tensorflow
  ---pip install tensorflow
  
- Keras
+ * Keras
  ---pip install keras
  
- Requests
+ * Requests
  ---py -m pip install requests
  
- Base64(optional)
+* Base64(optional)
  ---pip install pybase64
  
